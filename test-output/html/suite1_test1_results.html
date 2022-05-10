@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Login Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Login Test</h1>
+<p>
+  Test duration: 261.310s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.automation.testsuite.CreateAccountTestPage</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyThatUserShouldCreateAccountSuccessfully
+      </td>
+  <td class="duration">
+    42.144s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on SignIn[[ChromeDriver: chrome on WINDOWS (61cca174d87eb7621e16c1846e5c669d)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Entering the email : [[ChromeDriver: chrome on WINDOWS (61cca174d87eb7621e16c1846e5c669d)] -&gt; xpath: //input[@id=&apos;email_create&apos;]]&lt;br&gt;<br />
+                                Clicking on create account[[ChromeDriver: chrome on WINDOWS (61cca174d87eb7621e16c1846e5c669d)] -&gt; xpath: //button[@id=&apos;SubmitCreate&apos;]]&lt;br&gt;<br />
+                                Entering firstnameProxy element for: DefaultElementLocator &apos;By.xpath: //input[@id=&apos;customer_firstname&apos;]&apos;&lt;br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;customer_firstname&apos;]&quot;}<br/>
+&nbsp; (Session info: chrome=101.0.4951.54)<br/>
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element<br/>
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;<br/>
+System info: host: &apos;DESKTOP-598O4S4&apos;, ip: &apos;192.168.1.226&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [61cca174d87eb7621e16c1846e5c669d, findElement {using=xpath, value=//input[@id=&apos;customer_firstname&apos;]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.54, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\hvtha\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63315/devtoo..., se:cdpVersion: 101.0.4951.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 61cca174d87eb7621e16c1846e5c669d</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)<br />
+              org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)<br />
+              org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)<br />
+              org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)<br />
+              com.sun.proxy.$Proxy15.sendKeys(Unknown Source)<br />
+              com.automation.utility.Utility.sendTextToElement(Utility.java:76)<br />
+              com.automation.pages.CreateAccountPage.fillMandetoryFields(CreateAccountPage.java:43)<br />
+              com.automation.testsuite.CreateAccountTestPage.verifyThatUserShouldCreateAccountSuccessfully(CreateAccountTestPage.java:29)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1249)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:808)<br />
+              org.testng.TestRunner.run(TestRunner.java:603)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:429)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:326)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1169)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1092)<br />
+              org.testng.TestNG.run(TestNG.java:1060)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.automation.testsuite.SignPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  VerifyThatUserShouldLogOutSuccessFully
+      </td>
+  <td class="duration">
+    5.560s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on SignIn[[ChromeDriver: chrome on WINDOWS (be09d6cd5f9a4512ee1f0b8b2573adb5)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Entering username[[ChromeDriver: chrome on WINDOWS (be09d6cd5f9a4512ee1f0b8b2573adb5)] -&gt; xpath: //input[@id=&apos;email&apos;]]&lt;br&gt;<br />
+                                Entering the password [[ChromeDriver: chrome on WINDOWS (be09d6cd5f9a4512ee1f0b8b2573adb5)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                Clicking on Signin button : [[ChromeDriver: chrome on WINDOWS (be09d6cd5f9a4512ee1f0b8b2573adb5)] -&gt; xpath: //button[@id=&apos;SubmitLogin&apos;]]&lt;br&gt;<br />
+                                Clicking on SignOut : [[ChromeDriver: chrome on WINDOWS (be09d6cd5f9a4512ee1f0b8b2573adb5)] -&gt; xpath: //a[@title=&apos;Log me out&apos;]]&lt;br&gt;<br />
+                                Verifying SignIn link : [[ChromeDriver: chrome on WINDOWS (be09d6cd5f9a4512ee1f0b8b2573adb5)] -&gt; xpath: //button[@id=&apos;SubmitLogin&apos;]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  userShouldNavigateToSignInPageSuccessFully
+      </td>
+  <td class="duration">
+    1.993s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on SignIn[[ChromeDriver: chrome on WINDOWS (3dddcbc7b9c86ff743b03581fcc0c8af)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Verifying the message[[ChromeDriver: chrome on WINDOWS (3dddcbc7b9c86ff743b03581fcc0c8af)] -&gt; xpath: //h1[contains(text(),&apos;Authentication&apos;)]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatUserShouldLogInSuccessFullyWithValidCredentials
+      </td>
+  <td class="duration">
+    4.885s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on SignIn[[ChromeDriver: chrome on WINDOWS (161840446e47680a74407a3112d8942f)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Entering username[[ChromeDriver: chrome on WINDOWS (161840446e47680a74407a3112d8942f)] -&gt; xpath: //input[@id=&apos;email&apos;]]&lt;br&gt;<br />
+                                Entering the password [[ChromeDriver: chrome on WINDOWS (161840446e47680a74407a3112d8942f)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                Clicking on Signin button : [[ChromeDriver: chrome on WINDOWS (161840446e47680a74407a3112d8942f)] -&gt; xpath: //button[@id=&apos;SubmitLogin&apos;]]&lt;br&gt;<br />
+                                Verifying Signout link : [[ChromeDriver: chrome on WINDOWS (161840446e47680a74407a3112d8942f)] -&gt; xpath: //a[@title=&apos;Log me out&apos;]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyTheErrorMessageWithInValidCredentials
+      </td>
+  <td class="duration">
+    22.304s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"abcd@gmail.com", ""</span><br />
+    
+            <div class="testOutput">
+                        Clicking on SignIn[[ChromeDriver: chrome on WINDOWS (855fe3208ce14028fdc68f8e7000cdb0)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Entering username[[ChromeDriver: chrome on WINDOWS (855fe3208ce14028fdc68f8e7000cdb0)] -&gt; xpath: //input[@id=&apos;email&apos;]]&lt;br&gt;<br />
+                                Entering the password [[ChromeDriver: chrome on WINDOWS (855fe3208ce14028fdc68f8e7000cdb0)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                Clicking on Signin button : [[ChromeDriver: chrome on WINDOWS (855fe3208ce14028fdc68f8e7000cdb0)] -&gt; xpath: //button[@id=&apos;SubmitLogin&apos;]]&lt;br&gt;<br />
+                                Verifing the error message : Proxy element for: DefaultElementLocator &apos;By.xpath: //li[contains(text(),&apos;An email address required.&apos;)]&apos;&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyTheErrorMessageWithInValidCredentials
+      </td>
+  <td class="duration">
+    2.918s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"", "123456"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on SignIn[[ChromeDriver: chrome on WINDOWS (9da0bc5bb15df6685779728bef499681)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Entering username[[ChromeDriver: chrome on WINDOWS (9da0bc5bb15df6685779728bef499681)] -&gt; xpath: //input[@id=&apos;email&apos;]]&lt;br&gt;<br />
+                                Entering the password [[ChromeDriver: chrome on WINDOWS (9da0bc5bb15df6685779728bef499681)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                Clicking on Signin button : [[ChromeDriver: chrome on WINDOWS (9da0bc5bb15df6685779728bef499681)] -&gt; xpath: //button[@id=&apos;SubmitLogin&apos;]]&lt;br&gt;<br />
+                                Verifing the error message : [[ChromeDriver: chrome on WINDOWS (9da0bc5bb15df6685779728bef499681)] -&gt; xpath: //li[contains(text(),&apos;An email address required.&apos;)]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyTheErrorMessageWithInValidCredentials
+      </td>
+  <td class="duration">
+    22.327s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"adfdfgfg", "123456"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on SignIn[[ChromeDriver: chrome on WINDOWS (c2e78002eac2eb157a1b1ba3839c6873)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Entering username[[ChromeDriver: chrome on WINDOWS (c2e78002eac2eb157a1b1ba3839c6873)] -&gt; xpath: //input[@id=&apos;email&apos;]]&lt;br&gt;<br />
+                                Entering the password [[ChromeDriver: chrome on WINDOWS (c2e78002eac2eb157a1b1ba3839c6873)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                Clicking on Signin button : [[ChromeDriver: chrome on WINDOWS (c2e78002eac2eb157a1b1ba3839c6873)] -&gt; xpath: //button[@id=&apos;SubmitLogin&apos;]]&lt;br&gt;<br />
+                                Verifing the error message : Proxy element for: DefaultElementLocator &apos;By.xpath: //li[contains(text(),&apos;An email address required.&apos;)]&apos;&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyTheErrorMessageWithInValidCredentials
+      </td>
+  <td class="duration">
+    25.592s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"abcd@gmail.com", "123456"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on SignIn[[ChromeDriver: chrome on WINDOWS (90376314f97e95ff72e7f9add31771f1)] -&gt; xpath: //a[contains(text(),&apos;Sign in&apos;)]]&lt;br&gt;<br />
+                                Entering username[[ChromeDriver: chrome on WINDOWS (90376314f97e95ff72e7f9add31771f1)] -&gt; xpath: //input[@id=&apos;email&apos;]]&lt;br&gt;<br />
+                                Entering the password [[ChromeDriver: chrome on WINDOWS (90376314f97e95ff72e7f9add31771f1)] -&gt; xpath: //input[@id=&apos;passwd&apos;]]&lt;br&gt;<br />
+                                Clicking on Signin button : [[ChromeDriver: chrome on WINDOWS (90376314f97e95ff72e7f9add31771f1)] -&gt; xpath: //button[@id=&apos;SubmitLogin&apos;]]&lt;br&gt;<br />
+                                Verifing the error message : Proxy element for: DefaultElementLocator &apos;By.xpath: //li[contains(text(),&apos;An email address required.&apos;)]&apos;&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.automation.testsuite.WomenCategoryPageTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyUserShouldAddProductToTheCartSuccessfully
+      </td>
+  <td class="duration">
+    14.016s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Printed Dress", "3", "L", "Orange"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on WOMEN tab[[ChromeDriver: chrome on WINDOWS (95abc1afb8928e28cfacf766cf790b57)] -&gt; xpath: //a[@title=&apos;Women&apos;]]&lt;br&gt;<br />
+                                Adding to cart[[ChromeDriver: chrome on WINDOWS (95abc1afb8928e28cfacf766cf790b57)] -&gt; xpath: //span[normalize-space()=&apos;Add to cart&apos;]]&lt;br&gt;<br />
+                                Verifying the popup Message[[ChromeDriver: chrome on WINDOWS (95abc1afb8928e28cfacf766cf790b57)] -&gt; xpath: (//h2[normalize-space()=&apos;Product successfully added to your shopping cart&apos;])[1]]&lt;br&gt;<br />
+                                Closing the popup message[[ChromeDriver: chrome on WINDOWS (95abc1afb8928e28cfacf766cf790b57)] -&gt; xpath: //span[@title=&apos;Close window&apos;]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldAddProductToTheCartSuccessfully
+      </td>
+  <td class="duration">
+    15.133s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Printed Chiffon Dress", "4", "S", "Green"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on WOMEN tab[[ChromeDriver: chrome on WINDOWS (bcdfb845fdad887dc1df5c08be9f6cf3)] -&gt; xpath: //a[@title=&apos;Women&apos;]]&lt;br&gt;<br />
+                                Adding to cart[[ChromeDriver: chrome on WINDOWS (bcdfb845fdad887dc1df5c08be9f6cf3)] -&gt; xpath: //span[normalize-space()=&apos;Add to cart&apos;]]&lt;br&gt;<br />
+                                Verifying the popup Message[[ChromeDriver: chrome on WINDOWS (bcdfb845fdad887dc1df5c08be9f6cf3)] -&gt; xpath: (//h2[normalize-space()=&apos;Product successfully added to your shopping cart&apos;])[1]]&lt;br&gt;<br />
+                                Closing the popup message[[ChromeDriver: chrome on WINDOWS (bcdfb845fdad887dc1df5c08be9f6cf3)] -&gt; xpath: //span[@title=&apos;Close window&apos;]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldAddProductToTheCartSuccessfully
+      </td>
+  <td class="duration">
+    14.872s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Printed Summer Dress with Price $28.98", "2", "M", "Blue"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on WOMEN tab[[ChromeDriver: chrome on WINDOWS (1747c0c8b08585b6f142ad5614011e6d)] -&gt; xpath: //a[@title=&apos;Women&apos;]]&lt;br&gt;<br />
+                                Adding to cart[[ChromeDriver: chrome on WINDOWS (1747c0c8b08585b6f142ad5614011e6d)] -&gt; xpath: //span[normalize-space()=&apos;Add to cart&apos;]]&lt;br&gt;<br />
+                                Verifying the popup Message[[ChromeDriver: chrome on WINDOWS (1747c0c8b08585b6f142ad5614011e6d)] -&gt; xpath: (//h2[normalize-space()=&apos;Product successfully added to your shopping cart&apos;])[1]]&lt;br&gt;<br />
+                                Closing the popup message[[ChromeDriver: chrome on WINDOWS (1747c0c8b08585b6f142ad5614011e6d)] -&gt; xpath: //span[@title=&apos;Close window&apos;]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldAddProductToTheCartSuccessfully
+      </td>
+  <td class="duration">
+    15.363s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Blouse", "2", "M", "White"</span><br />
+    
+            <div class="testOutput">
+                        Clicking on WOMEN tab[[ChromeDriver: chrome on WINDOWS (f9ac2fbaf9b377f6e71104a0fd7a8442)] -&gt; xpath: //a[@title=&apos;Women&apos;]]&lt;br&gt;<br />
+                                Adding to cart[[ChromeDriver: chrome on WINDOWS (f9ac2fbaf9b377f6e71104a0fd7a8442)] -&gt; xpath: //span[normalize-space()=&apos;Add to cart&apos;]]&lt;br&gt;<br />
+                                Verifying the popup Message[[ChromeDriver: chrome on WINDOWS (f9ac2fbaf9b377f6e71104a0fd7a8442)] -&gt; xpath: (//h2[normalize-space()=&apos;Product successfully added to your shopping cart&apos;])[1]]&lt;br&gt;<br />
+                                Closing the popup message[[ChromeDriver: chrome on WINDOWS (f9ac2fbaf9b377f6e71104a0fd7a8442)] -&gt; xpath: //span[@title=&apos;Close window&apos;]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToWomenCategoryPageSuccessfully
+      </td>
+  <td class="duration">
+    1.541s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on WOMEN tab[[ChromeDriver: chrome on WINDOWS (4f1581b289a812c5703638959109b513)] -&gt; xpath: //a[@title=&apos;Women&apos;]]&lt;br&gt;<br />
+                                Verifying WOMEN text[[ChromeDriver: chrome on WINDOWS (4f1581b289a812c5703638959109b513)] -&gt; xpath: //h2[contains(text(),&apos;Women&apos;)]]&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
